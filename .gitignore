@@ -1,0 +1,50 @@
+# =================================================================
+# CREDENCIALES Y SEGURIDAD (CRÍTICO)
+# =================================================================
+# Bloqueo de secretos y configuración de entorno local
+.env
+config.pyc
+auth_token.txt
+
+# =================================================================
+# DATA ENGINEERING & PERSISTENCIA (DATA LAKE LOCAL)
+# =================================================================
+# Se ignora la salida de datos para mantener el repo agnóstico a la carga
+# La infraestructura debe ser capaz de regenerar estos archivos
+output/
+data/
+*.parquet
+*.csv
+*.json
+
+# =================================================================
+# ENTORNOS VIRTUALES Y DEPENDENCIAS
+# =================================================================
+# Las librerías se gestionan vía requirements.txt
+venv/
+.venv/
+env/
+ENV/
+lib/
+bin/
+
+# =================================================================
+# PYTHON INTERNALS & TESTING
+# =================================================================
+# Basura técnica del intérprete y artefactos de cobertura
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.ipynb_checkpoints/
+
+# =================================================================
+# CONFIGURACIÓN DE IDEs Y SISTEMA
+# =================================================================
+# Metadatos de editores y archivos de sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp

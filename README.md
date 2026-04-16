@@ -1,4 +1,4 @@
-# Pipeline de Ingeniería de Datos: Ingesta Resiliente de Transacciones E-commerce
+# Pipeline ETL con API-REST, Pandas y Parquet
 Este proyecto implementa un ecosistema de extracción automatizada (ETL) diseñado para interactuar con APIs REST de alta demanda. El pipeline transforma datos transaccionales crudos en un repositorio **OLAP optimizado (Capa Gold)**, garantizando la integridad del dato y la eficiencia en el consumo analítico posterior.
 
 ## Objetivo del Proyecto

@@ -9,16 +9,16 @@ Desarrollar un sistema de ingesta robusto que actúe como puente entre fuentes e
 
 Para asegurar que este proyecto aporte valor tanto a niveles de Management como a Equipos Técnicos, se detallan los pilares del diseño:
 
-**¿Qué significa una "Ingesta Resiliente"?**
+### ¿Qué significa una "Ingesta Resiliente"?
 En entornos productivos, las APIs pueden presentar inestabilidad o límites de tráfico (Rate Limits).
 
-**Visión Técnica:** 
+### Visión Técnica:
 El sistema utiliza una sesión persistente con **Exponential Backoff**. Si el servidor falla o limita la conexión, el pipeline "respira" y reintenta la operación de forma inteligente.
 
-**Visión de Negocio:** 
+### Visión de Negocio: 
 Se garantiza la continuidad operativa. Un fallo en la ingesta significa un día sin reportes de ventas; este sistema mitiga ese riesgo financiero y asegura la disponibilidad de la información.
 
-**Almacenamiento Orientado a Consultas (Capa Gold)**
+### Almacenamiento Orientado a Consultas (Capa Gold)
 **Eficiencia de Costos:** 
 Se seleccionó el formato Parquet por su alta capacidad de compresión y almacenamiento columnar, reduciendo costos de almacenamiento en la nube.
 

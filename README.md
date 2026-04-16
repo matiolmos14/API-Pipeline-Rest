@@ -19,10 +19,10 @@ El sistema utiliza una sesión persistente con **Exponential Backoff**. Si el se
 Se garantiza la continuidad operativa. Un fallo en la ingesta significa un día sin reportes de ventas; este sistema mitiga ese riesgo financiero y asegura la disponibilidad de la información.
 
 ### Almacenamiento Orientado a Consultas (Capa Gold)
-**Eficiencia de Costos:** 
+* **Eficiencia de Costos:** 
 Se seleccionó el formato Parquet por su alta capacidad de compresión y almacenamiento columnar, reduciendo costos de almacenamiento en la nube.
 
-**Optimización Analítica:** 
+* **Optimización Analítica:** 
 El uso de Hive Partitioning permite que herramientas de BI (Power BI, Athena, DuckDB) realicen Data Skipping, leyendo solo los archivos necesarios y reduciendo drásticamente los tiempos de respuesta para el usuario final.
 
 ## Stack Tecnológico
